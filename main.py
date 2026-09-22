@@ -105,9 +105,9 @@ def ask_gemini(user_query: str) -> str:
 """
 
     try:
-        # 升級使用最強的 gemini-2.5-pro 模型
+        # 升級使用最強的 gemini-2.5-flash 模型
         response = gemini_client.models.generate_content(
-            model='gemini-2.5-pro',
+            model='gemini-2.5-flash',
             contents=user_query,
             config=types.GenerateContentConfig(
                 system_instruction=system_instruction,
